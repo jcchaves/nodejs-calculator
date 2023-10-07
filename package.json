@@ -2,8 +2,12 @@
   "name": "nodejs-calculator",
   "version": "1.0.0",
   "description": "A node.js calculator",
-  "main": "app.js",
+  "main": "index.js",
+  "type": "module",
   "scripts": {
+    "start": "node ./bin/www",
+    "dev": "nodemon -e js,mjs,cjs,json,hbs ./bin/www",
+    "watch": "webpack --watch",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -20,5 +24,18 @@
   "bugs": {
     "url": "https://github.com/jcchaves/nodejs-calculator/issues"
   },
-  "homepage": "https://github.com/jcchaves/nodejs-calculator#readme"
+  "homepage": "https://github.com/jcchaves/nodejs-calculator#readme",
+  "dependencies": {
+    "babel-loader": "^9.1.3",
+    "connect-livereload": "^0.6.1",
+    "css-loader": "^6.8.1",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "express-handlebars": "^7.1.2",
+    "file-loader": "^6.2.0",
+    "livereload": "^0.9.3",
+    "style-loader": "^3.3.3",
+    "webpack": "^5.88.2",
+    "webpack-cli": "^5.1.4"
+  }
 }
