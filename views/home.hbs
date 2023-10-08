@@ -1,1 +1,41 @@
-<h1>Hello world!!!</h1>
+<main class="container">
+  <div id="calculator" class="d-flex flex-column col-6 m-auto">
+    <div class="display d-flex">
+      <span class="total flex-grow-1 text-end">0</span>
+    </div>
+    <div class="keypad d-flex">
+      <div class="left d-flex flex-column w-75">
+        <div class="utilities d-flex flex-grow-1">
+          <span class="utility">AC</span>
+        </div>
+        <div class="digits d-flex flex-wrap">
+          <span class="digit single-key-space">7</span>
+          <span class="digit single-key-space">8</span>
+          <span class="digit single-key-space">9</span>
+          <span class="digit single-key-space">4</span>
+          <span class="digit single-key-space">5</span>
+          <span class="digit single-key-space">6</span>
+          <span class="digit single-key-space">1</span>
+          <span class="digit single-key-space">2</span>
+          <span class="digit single-key-space">3</span>
+          <div class="digit-wrapper d-flex double-key-space">
+            <span class="left"></span>
+            <span class="digit">0</span>
+            <span class="right"></span>
+          </div>
+          <span class="separator single-key-space">.</span>
+        </div>
+      </div>
+      <div class="right d-flex w-25">
+        <div class="operators d-flex flex-column flex-grow-1">
+          <span class="operator">&divide;</span>
+          <span class="operator">&times;</span>
+          <div class="operator">&minus;</div>
+          <span class="operator">&plus;</span>
+          <span class="operator">&equals;</span>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</main>

@@ -1,3 +1,114 @@
-.main {
-    background-color: gray;
+#calculator {
+    background-color: black;
+    padding: 1px;
+    width: 100px;
+}
+
+.display {
+    color: white;
+    margin-bottom: 3px;
+}
+
+.keypad {
+    
+}
+
+.utilities {
+
+}
+
+.digits {
+
+}
+
+.operators {
+    
+}
+
+.total {
+    padding: 0 5px 0px;
+}
+
+.utility {
+    align-items: center;
+    background-color: #a5a5a5;
+    border-radius: 50%;
+    display: inline-flex;
+    flex-basis: 33%;
+    font-size: 0.5em;
+    font-weight: 500;
+    justify-content: center;
+    margin: 1px 0;
+}
+
+.digit {
+    background-color: #333333;
+    border-radius: 50%;
+    color: white;
+    flex-grow: 1;
+    flex-shrink: 0;
+    font-size: 0.6em;
+    line-height: 2.5em;
+    margin: 1px 0;
+    text-align: center;
+}
+
+.digit-wrapper {
+    position: relative;
+    margin: 1px 0;
+}
+
+.digit-wrapper span {
+    background-color: #333333;
+    flex-grow: 1;
+}
+
+.digit-wrapper .digit {
+    border-radius: 0%;
+    left: 25%;
+    margin: 0;
+    position: absolute;
+    width: 50%;
+}
+
+.digit-wrapper .left {
+    border-radius: 50% / 50% 0 0 50%;
+    flex-basis: 50%;
+}
+
+.digit-wrapper .right {
+    border-radius: 50% / 0 50% 50% 0;
+    flex-basis: 50%;
+}
+
+.digit-border {
+    flex-grow: 1;
+}
+
+.separator {
+    background-color: #333333;
+    border-radius: 50%;
+    color: white;
+    flex-grow: 1;
+    margin: 1px 0;
+    text-align: center;
+}
+
+.operator {
+    background-color: orange;
+    border-radius: 50%;
+    color: white;
+    font-size: 0.6em;
+    height: 2.5em;
+    line-height: 2.4em;
+    margin: 1px 0;
+    text-align: center;
+}
+
+.single-key-space {
+    flex-basis: 33%;
+}
+
+.double-key-space {
+    flex-basis: 66%;
 }
